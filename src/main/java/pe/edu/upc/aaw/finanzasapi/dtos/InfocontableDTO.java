@@ -5,12 +5,12 @@ import java.time.LocalDate;
 
 public class InfocontableDTO {
     private int idInfocontable;
-    private int plazoDias;
-    private LocalDate fechaFin;
-    private LocalDate fechaInicio;
-    private double tasaEfectiva;
-    private double valorPresente;
-    private double valorFuturo;
+    private int plazodias;
+    private LocalDate fechafin;
+    private LocalDate fechainicio;
+    private double tasaefectiva;
+    private double valorpresente;
+    private double valorfuturo;
     private Users user;
 
     public int getIdInfocontable() {
@@ -22,51 +22,51 @@ public class InfocontableDTO {
     }
 
     public int getPlazodias() {
-        return plazoDias;
+        return plazodias;
     }
 
-    public void setPlazodias(int plazoDias) {
-        this.plazoDias = plazoDias;
+    public void setPlazodias(int plazodias) {
+        this.plazodias = plazodias;
     }
 
     public LocalDate getFechafin() {
-        return fechaFin;
+        return fechafin;
     }
 
-    public void setFechafin(LocalDate fechaFin) {
-        this.fechaFin = fechaFin;
+    public void setFechafin(LocalDate fechafin) {
+        this.fechafin = fechafin;
     }
 
     public LocalDate getFechainicio() {
-        return fechaInicio;
+        return fechainicio;
     }
 
-    public void setFechainicio(LocalDate fechaInicio) {
-        this.fechaInicio = fechaInicio;
+    public void setFechainicio(LocalDate fechainicio) {
+        this.fechainicio = fechainicio;
     }
 
     public double getTasaefectiva() {
-        return tasaEfectiva;
+        return tasaefectiva;
     }
 
-    public void setTasaefectiva(double tasaEfectiva) {
-        this.tasaEfectiva = tasaEfectiva;
+    public void setTasaefectiva(double tasaefectiva) {
+        this.tasaefectiva = tasaefectiva;
     }
 
     public double getValorpresente() {
-        return valorPresente;
+        return valorpresente;
     }
 
-    public void setValorpresente(double valorPresente) {
-        this.valorPresente = valorPresente;
+    public void setValorpresente(double valorpresente) {
+        this.valorpresente = valorpresente;
     }
 
     public double getValorfuturo() {
-        return valorFuturo;
+        return valorfuturo;
     }
 
-    public void setValorfuturo(double valorFuturo) {
-        this.valorFuturo = valorFuturo;
+    public void setValorfuturo(double valorfuturo) {
+        this.valorfuturo = valorfuturo;
     }
 
     public Users getUser() {

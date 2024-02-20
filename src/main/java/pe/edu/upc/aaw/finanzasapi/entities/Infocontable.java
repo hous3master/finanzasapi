@@ -12,23 +12,23 @@ public class Infocontable {
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 private int idInfocontable;
 
-@Column(name = "plazoDias", nullable = false)
-private int plazoDias;
+@Column(name = "plazodias", nullable = false)
+private int plazodias;
 
-@Column(name = "fechaFin", nullable = false)
-private LocalDate fechaFin;
+@Column(name = "fechafin", nullable = false)
+private LocalDate fechafin;
 
-@Column(name = "fechaInicio", nullable = false)
-private LocalDate fechaInicio;
+@Column(name = "fechainicio", nullable = false)
+private LocalDate fechainicio;
 
-@Column(name = "tasaEfectiva", nullable = false)
-private double tasaEfectiva;
+@Column(name = "tasaefectiva", nullable = false)
+private double tasaefectiva;
 
-@Column(name = "valorPresente", nullable = false)
-private double valorPresente;
+@Column(name = "valorpresente", nullable = false)
+private double valorpresente;
 
-@Column(name = "valorFuturo", nullable = false)
-private double valorFuturo;
+@Column(name = "valorfuturo", nullable = false)
+private double valorfuturo;
 
 @ManyToOne
 @JoinColumn(name = "id")
@@ -36,14 +36,14 @@ private Users user;
 
 public Infocontable() { }
 
-public Infocontable(int idInfocontable,int plazoDias, LocalDate fechaFin, LocalDate fechaInicio, double tasaEfectiva, double valorPresente, double valorFuturo, Users user) {
+public Infocontable(int idInfocontable,int plazodias, LocalDate fechafin, LocalDate fechainicio, double tasaefectiva, double valorpresente, double valorfuturo, Users user) {
     this.idInfocontable = idInfocontable;
-    this.plazoDias = plazoDias;
-    this.fechaFin = fechaFin;
-    this.fechaInicio = fechaInicio;
-    this.tasaEfectiva = tasaEfectiva;
-    this.valorPresente = valorPresente;
-    this.valorFuturo = valorFuturo;
+    this.plazodias = plazodias;
+    this.fechafin = fechafin;
+    this.fechainicio = fechainicio;
+    this.tasaefectiva = tasaefectiva;
+    this.valorpresente = valorpresente;
+    this.valorfuturo = valorfuturo;
     this.user = user;
 }
 
@@ -56,51 +56,51 @@ public void setIdInfocontable(int idInfocontable) {
 }
 
 public int getPlazodias() {
-    return plazoDias;
+    return plazodias;
 }
 
-public void setPlazodias(int plazoDias) {
-    this.plazoDias = plazoDias;
+public void setPlazodias(int plazodias) {
+    this.plazodias = plazodias;
 }
 
 public LocalDate getFechafin() {
-    return fechaFin;
+    return fechafin;
 }
 
-public void setFechafin(LocalDate fechaFin) {
-    this.fechaFin = fechaFin;
+public void setFechafin(LocalDate fechafin) {
+    this.fechafin = fechafin;
 }
 
 public LocalDate getFechainicio() {
-    return fechaInicio;
+    return fechainicio;
 }
 
-public void setFechainicio(LocalDate fechaInicio) {
-    this.fechaInicio = fechaInicio;
+public void setFechainicio(LocalDate fechainicio) {
+    this.fechainicio = fechainicio;
 }
 
 public double getTasaefectiva() {
-    return tasaEfectiva;
+    return tasaefectiva;
 }
 
-public void setTasaefectiva(double tasaEfectiva) {
-    this.tasaEfectiva = tasaEfectiva;
+public void setTasaefectiva(double tasaefectiva) {
+    this.tasaefectiva = tasaefectiva;
 }
 
 public double getValorpresente() {
-    return valorPresente;
+    return valorpresente;
 }
 
-public void setValorpresente(double valorPresente) {
-    this.valorPresente = valorPresente;
+public void setValorpresente(double valorpresente) {
+    this.valorpresente = valorpresente;
 }
 
 public double getValorfuturo() {
-    return valorFuturo;
+    return valorfuturo;
 }
 
-public void setValorfuturo(double valorFuturo) {
-    this.valorFuturo = valorFuturo;
+public void setValorfuturo(double valorfuturo) {
+    this.valorfuturo = valorfuturo;
 }
 
 public Users getUser() {

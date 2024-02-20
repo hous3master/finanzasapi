@@ -15,8 +15,8 @@ public class InfocontableServiceImplement implements IInfocontableService {
 
     // Add an item to table
     @Override
-    public void insert(Infocontable InfoContable) {
-        myRepository.save(InfoContable);
+    public void insert(Infocontable Infocontable) {
+        myRepository.save(Infocontable);
     }
 
     // Delete an item by ID on table
